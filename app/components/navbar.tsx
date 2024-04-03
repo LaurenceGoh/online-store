@@ -3,8 +3,6 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-  NavbarItem,
-  Button,
   Input,
   DropdownItem,
   DropdownMenu,
@@ -16,7 +14,7 @@ import { Link } from "@remix-run/react";
 
 const Nav = () => {
   return (
-    <Navbar isBordered>
+    <Navbar isBordered className="bg-gray-100">
       <NavbarBrand>
         <p className="font-bold text-inherit">Online Store</p>
       </NavbarBrand>
@@ -25,7 +23,7 @@ const Nav = () => {
       <NavbarContent as="div" className="items-center">
         <Input
           classNames={{
-            base: "max-w-full  h-10",
+            base: "max-w-full h-10",
             mainWrapper: "h-full",
             input: "text-small",
             inputWrapper:
